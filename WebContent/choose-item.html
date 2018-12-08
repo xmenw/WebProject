@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> 短袖t恤男士套装韩版潮流男装2018新款潮男休闲夏季</title>
+	<link rel="stylesheet" href="./css/choose-item.css">
+	<link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon" />
+</head>
+<body>
+	<div class="ch-top">
+		<div class="nz-top">
+			<div class="nz-top-left">
+				<a href="index.html"><img src="./image/logo.jpg"></a>
+			</div>
+			<div class="nz-top-right">
+				<form action="#" method="get">
+					<div class="input">
+					  <input type="text" name=" search" placeholder="请输入要搜索的女装">
+					</div>
+					<div class="button">
+					  <button type="submit">搜索</button>
+					</div>
+				</form>
+			 </div>
+	    </div>
+	</div>
+    <div class="cente">
+    	 <div class="pic">
+    		<img src="./image/cloth4.jpg" alt="" id="imgs">
+    	    <div class="fdj"></div>
+    	 </div>
+    	 <div class="bpic"></div>
+    	<div class="xinxi">
+    		<div class="name">
+    			<span id="desc">短袖t恤男士套装韩版潮流男装2018新款潮男休闲夏季</span>
+    		</div>
+    		<div class="list">
+				<ul class="jg">
+    				<li><span>价格</span><span class="price">¥162.00</span></li>
+    				<li><span>小店价</span><span id="price">¥128.00</span></li>
+    				<li><span>优惠</span><span>5元店铺优惠券，满6元可用</span><a href="#">领取</a></li>
+				</ul>
+				<ul class="list-ul">
+    				<li><span>配送</span><span>浙江宁波 至 河北廊坊三河市 快递 免运费 30天内发货</span></li>
+    				<li id="size"><span>尺码</span>
+    				<span class="size">M</span>
+    				<span class="size">L</span>
+    				<span class="size">XL</span>
+    				<span class="size">XXL</span>
+    				<span class="size">XXXL</span></li>
+    				<li id="color"><span>主要颜色</span>
+    					<em>魅红色</em>
+    				   	<em>黑色</em>
+    					<em>白色</em>
+    					<em>蓝色</em>
+    					<em>藏青色</em>
+    					<em>灰色</em>
+    				</li>
+			    </ul>
+			    <div class="cnt">
+	    			<span>数量</span>
+	    			<span class="dis">-</span><input type="text" value="1" class="count" id="num"><span class="add">+</span><span> 库存（5516）件</span>
+    		    </div>
+    		    <div class="button">
+    		    	<form action="InserShopServlet" method="post">
+    		    		<input type="text" name="desc" id="dc" hidden="hidden">
+    		    		<input type="text" name="img" id="im" hidden="hidden">
+    		    		<input type="text" name="price" id="pr" hidden="hidden">
+    		    		<input type="text" name="size" id="si" hidden="hidden">
+    		    		<input type="text" name="color" id="col" hidden="hidden">
+    		    		<input type="text" name="num" id="nm" value="1" hidden="hidden">
+    		    		<button>立即购买</button>
+    		    		<button type="submit" class="shopcar">加入购物车</button>
+    		    	</form>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+    <div class="introduce">
+    	  <ul class="ul">
+    	  		<li>宝贝详情</li>
+    	  		<li>商品评论</li>
+    	  		<li>专享服务</li>
+    	  	</ul>	
+          <ul class="intro">
+        	<li>袖长: 短袖</li>
+        	<li>货号: F8042014</li>
+        	<li>服装版型: 直筒</li>
+        	<li>衣长: 常规款</li>
+        	<li>袖型: 常规</li>
+        	<li>品牌: ffan</li>
+        	<li>成分含量: 96%及以上</li>
+        	<li>面料: 棉</li>
+        	<li>图案: 纯色</li>
+        	<li>风格: 街头</li>
+        	<li>年份季节: 2018年夏季</li>
+        	<li>主要颜色: V领冷灰(预售5-9天) V领白色(预售5-9天) V领冰岛蓝(预售5-9天) V领香芋紫(预售5-9天) V领元气橙(预售5-9天) V领牛油果绿(预售5-9天) V领黑色(预售5-9天) 圆领冷灰(预售5-9天) 圆领白色(预售5-9天) 圆领冰岛蓝(预售5-9天)</li>
+        	<li>尺码: M L XL XXL XXXL</li>
+          </ul>
+        </div>
+    <div class="tip">
+    	<span>添加成功！</span>
+    </div>
+    <script>
+    	let descs = desc.innerText,
+    		img = imgs.src.replace('http://localhost:8888/qimo','.'),
+    		prices = price.innerText.slice(1),
+    		nums = num.value;
+    	dc.value = descs,
+    	im.value = img;
+    	pr.value = prices;
+    	var shop = document.getElementsByClassName('shopcar')[0];
+    	var tip = document.getElementsByClassName('tip')[0];
+    	shop.onclick = function(){
+            console.log('novs');
+             shop.style.backgroundColor = '#c0c0c0';
+             tip.style.display = 'inline-block';
+             if(tip.style.display == 'inline-block'){
+    		   setTimeout(function(){
+                  tip.style.display = 'none';
+    		  },1000);
+    	    }
+    	}
+    	var pic = document.getElementsByClassName('pic')[0]; 
+    	var fdj = document.getElementsByClassName('fdj')[0];
+    	var bpic = document.getElementsByClassName('bpic')[0];
+    	var x = 170,
+    	    y = 85,
+    	    disX = 200/2;
+    	    disY = 144/2;
+    	pic.onmousemove = function(e){
+    		bpic.style.display = 'block';
+            fdj.style.left = e.clientX - x - disX+ 'px';
+            fdj.style.top = e.clientY - y - disY + 'px';
+            if(parseInt(fdj.style.left) <= 0){
+            	fdj.style.left = '0px';
+            }else if(parseInt(fdj.style.left) >=300){
+                fdj.style.left = '300px';
+            }
+            if(parseInt(fdj.style.top) <= 0){
+            	 fdj.style.top = '0px';
+            }else if(parseInt(fdj.style.top) >= 216){
+                 fdj.style.top = '216px';
+            }
+            bpic.style.backgroundPositionX =- parseInt(fdj.style.left)*2.5+'px';
+            bpic.style.backgroundPositionY =- parseInt(fdj.style.top)*2.5+'px';
+    	}
+        pic.onmouseleave = function(){
+        	fdj.style.left = '-200px';
+            bpic.style.display = 'none';	
+        }
+        var size = document.getElementsByClassName('size');
+        var em = document.getElementsByTagName('em');
+        for(var j=0;j<size.length;j++){ 
+            (function(n){ 
+                size[n].onclick = function(){ 
+                  for(var i=0;i<size.length;i++){
+                     size[i].classList.remove('checked');
+                  }
+                  size[n].classList.add('checked');
+                  si.value = size[n].innerText;
+                }
+            }(j))   
+        }
+        for(var j=0;j<em.length;j++){ 
+            (function(n){ 
+                em[n].onclick = function(){ 
+                  for(var i=0;i<em.length;i++){
+                	 em[i].classList.remove('checked');
+                  }
+                  em[n].classList.add('checked');
+                  col.value = em[n].innerText;
+                }
+            }(j))   
+        }
+        var dis = document.getElementsByClassName('dis')[0];
+        var add = document.getElementsByClassName('add')[0];
+        var count = document.getElementsByClassName('count')[0];
+        dis.onclick = function(){
+            count.value --;
+            nm.value = count.value;
+        }
+        add.onclick = function(){
+            count.value ++;
+            nm.value = count.value;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
